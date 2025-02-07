@@ -401,12 +401,14 @@ h2, h3 {
 
 .table-container {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 0;
+  justify-content: flex;    
+  flex: 2;
+  width: 100%;
 }
 
 table {
-  width: 90%;
+  flex-grow: 1;
+  width: 100%;
   max-width: 1000px;
   border-collapse: collapse;
   margin-top: -2rem;
@@ -418,7 +420,6 @@ table {
 th, td {
   border: 1px solid #ddd;
   padding: 8px;
-  text-align: left;
 }
 td.cell{
   text-align: center;
@@ -440,18 +441,24 @@ ul li {
 
 .plant-cell-header {
   background-color: #e3f2fd;
+  font-size: 17px;
 }
 
 .animal-cell-header {
   background-color: #fff9c4;
+  font-size: 17px;
 }
 
 .plant-cell {
   background-color: #e3f2fd;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .animal-cell {
   background-color: #fff9c4;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .common-structure {
@@ -463,15 +470,20 @@ ul li {
   font-size: 16px;
 }
 .video-wrapper {
-  position: absolute;
-  width: 100%; /* Full width on small screens */
-  max-width: 600px; /* Adjust width based on screen size */
-  aspect-ratio: 16 / 9; /* Maintain correct video ratio */
-  overflow: hidden; /* Hide overflow when video is smaller than container */
-  background-color: #000; /* Black background color */
-  cursor: pointer; /* Make the video clickable */
-  top: 36.2%;
-  left: 63%;
+  flex: 1;
+  max-width: 40%; /* Adjust size */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #000;
+  cursor: pointer;    
+}
+
+.content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; 
+  width: 100% ;
 }
 
 .video-wrapper iframe {
@@ -483,13 +495,13 @@ ul li {
   width: 75%;
   text-align: left;
 }
-@media (max-width: 1200px) {
-  .video-wrapper {
-    max-width: 90%;
+@media (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack table & video */
+    align-items: center;
   }
-}
-@media (max-width: 480px) {
-  .video-wrapper {
-    max-width: 100%; /* Full width for mobile */
+
+  .table-container, .video-wrapper{
+    width: 100%;
   }
 }
