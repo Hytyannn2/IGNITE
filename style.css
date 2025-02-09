@@ -410,15 +410,41 @@ table {
   flex-grow: 1;
   width: 100%;
   max-width: 1000px;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin-top: -2rem;
   margin-bottom: 5rem;
   background-color: #fff;
   overflow: hidden;
+  border-radius: 16px;
+  outline: 1px solid black;
+}
+/* Ensure the header has rounded top corners */
+table thead tr:first-child th:first-child {
+  border-top-left-radius: 16px;
 }
 
+table thead tr:first-child th:last-child {
+  border-top-right-radius: 16px;
+}
+
+/* Ensure the last row has rounded bottom corners */
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 16px;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 16px;
+}
+
+/* Make all table cell borders uniform */
 th, td {
-  border: 1px solid #ddd;
+  border: 2px solid black; /* Match outline thickness */
+  padding: 10px;
+  text-align: center;
+}
+th, td {
+  border: 1px solid #1E152A;
   padding: 8px;
 }
 td.cell{
@@ -440,57 +466,39 @@ ul li {
 }
 
 .plant-cell-header {
-  background-color: #e3f2fd;
+  background-color: #0E7C7B;
   font-size: 17px;
+  color: #EDF7F6;
 }
 
 .animal-cell-header {
-  background-color: #fff9c4;
+  background-color: #D62246;
   font-size: 17px;
+  color: #EDF7F6;
 }
 
 .plant-cell {
-  background-color: #e3f2fd;
+  background-color: #0E7C7B;
   vertical-align: middle;
   text-align: center;
+  color: #EDF7F6;
 }
 
 .animal-cell {
-  background-color: #fff9c4;
+  background-color: #D62246;
   vertical-align: middle;
   text-align: center;
+  color: #EDF7F6;
 }
 
 .common-structure {
   text-align: center;
   font-weight: bold;
-  background-color: #f0f0f0;
+  background-color: #EDF7F6;
 }
 .comparison-title{
   font-size: 16px;
 }
-.video-wrapper {
-  flex: 1;
-  max-width: 40%; /* Adjust size */
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background-color: #000;
-  cursor: pointer;    
-}
-
-.content-wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px; 
-  width: 100% ;
-}
-
-.video-wrapper iframe {
-  width: 100%;
-  height: 100%;
-}
-
 #subtopic{
   width: 75%;
   text-align: left;
@@ -504,4 +512,50 @@ ul li {
   .table-container, .video-wrapper{
     width: 100%;
   }
+}
+
+.amoeba-container {
+  max-width: 1000px;
+  margin-left: 0;
+}
+
+.amoeba-section {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.amoeba-section-title {
+  background-color: #e5e7eb;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.amoeba-grid-container {
+  display: flex;
+  border-top: 1px solid black;
+}
+
+.amoeba-grid-item {
+  flex: 1;
+  padding: 16px;
+  border-right: 1px solid black;
+}
+
+.amoeba-grid-item:last-child {
+  border-right: none;
+}
+
+.amoeba-species-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.amoeba-highlight {
+  font-weight: bold;
+}
+
+.amoeba-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }

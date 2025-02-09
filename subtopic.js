@@ -247,7 +247,51 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </table>
                                 </div>
                              </div>` },
-                        { title: "Energy Production and Use", content: "Energy production and use ...." },
+                        { title: "Living Processes in Unicellular Organism", content: `<p class="textbook-page"><span class="page-info">Textbook page 28-29</span></p>
+                            <p><div class="amoeba-container">
+    <!-- Movement Section -->
+    <div class="amoeba-section">
+        <div class="amoeba-section-title">Movement</div>
+        <div class="amoeba-grid-container">
+            <div class="amoeba-grid-item">
+                <div class="amoeba-species-title">Amoeba sp.</div>
+                <ul>
+                    <li>Moves by extending out <span class="amoeba-highlight">pseudopodium</span> (false feet)</li>
+                    <li><span class="amoeba-highlight">Cytoplasm</span> then flows into the extended <span class="amoeba-highlight">pseudopodium</span></li>
+                </ul>
+            </div>
+            <div class="amoeba-grid-item">
+                <div class="amoeba-species-title">Paramecium sp.</div>
+                <ul>
+                    <li>Moves by rhythmic cilia beats</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nutrition Section -->
+    <div class="amoeba-section">
+        <div class="amoeba-section-title">Nutrition</div>
+        <div class="amoeba-grid-container">
+            <div class="amoeba-grid-item">
+                <div class="amoeba-species-title">Amoeba sp.</div>
+                <ul>
+                    <li>Extends pseudopodium to trap food particles by <span class="amoeba-highlight">phagocytosis</span></li>
+                    <li><span class="amoeba-highlight">Undigested food</span> is discharged during <span class="amoeba-highlight">movement</span></li>
+                </ul>
+            </div>
+            <div class="amoeba-grid-item">
+                <div class="amoeba-species-title">Paramecium sp.</div>
+                <ul>
+                    <li><span class="amoeba-highlight">Cilium beat</span> moves food into the <span class="amoeba-highlight">oral groove</span></li>
+                    <li><span class="amoeba-highlight">Food vacuole</span> merges with <span class="amoeba-highlight">lysosome</span> for digestion. Food particles <span class="amoeba-highlight">hydrolysed</span> by lysozyme in lysosome</li>
+                    <li><span class="amoeba-highlight">Nutrients</span> are absorbed into the <span class="amoeba-highlight">cytoplasm</span></li>
+                    <li><span class="amoeba-highlight">Undigested food</span> is discharged through the <span class="amoeba-highlight">anus</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>` },
                         { title: "Carbohydrates", content: "Carbohydrates ...." }
                     ]
                 }
