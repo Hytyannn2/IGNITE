@@ -406,6 +406,14 @@ h2, h3 {
   width: 100%;
 }
 
+.table{
+  margin-top: 50px;
+}
+
+.excretion-table{
+  margin-top: -25px;
+}
+
 table {
   flex-grow: 1;
   width: 100%;
@@ -419,9 +427,16 @@ table {
   border-radius: 16px;
   outline: 1px solid black;
 }
+
+.cell-function{
+  text-align: left;
+  vertical-align: top;
+}
+
 /* Ensure the header has rounded top corners */
 table thead tr:first-child th:first-child {
   border-top-left-radius: 16px;
+
 }
 
 table thead tr:first-child th:last-child {
@@ -452,7 +467,7 @@ td.cell{
 }
 
 th {
-  background-color: #cccccc;
+  background-color: #FF9F1C;
   text-align: center;
 }
 
@@ -497,8 +512,12 @@ ul li {
   background-color: #EDF7F6;
 }
 .comparison-title{
-  font-size: 16px;
+  text-align: left;
+  font-size: 1.5rem;
+  position: relative;
+  top: -32px;
 }
+
 #subtopic{
   width: 75%;
   text-align: left;
@@ -509,7 +528,7 @@ ul li {
     align-items: center;
   }
 
-  .table-container, .video-wrapper{
+  .table-container{
     width: 100%;
   }
 }
@@ -517,11 +536,14 @@ ul li {
 .amoeba-container {
   max-width: 1000px;
   margin-left: 0;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .amoeba-section {
   border: 1px solid black;
   margin-bottom: 20px;
+  border-radius: 16px;
 }
 
 .amoeba-section-title {
@@ -534,6 +556,7 @@ ul li {
 .amoeba-grid-container {
   display: flex;
   border-top: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .amoeba-grid-item {
@@ -549,13 +572,30 @@ ul li {
 .amoeba-species-title {
   font-weight: bold;
   margin-bottom: 8px;
-}
-
-.amoeba-highlight {
-  font-weight: bold;
+  text-align: left;
 }
 
 .amoeba-container ul {
   list-style-type: disc;
   padding-left: 20px;
+}
+
+#typeOfCells {
+  display: flex;               /* Use flexbox for layout */
+  flex-direction: column;      /* Stack children vertically */
+  align-items: center;         /* Center children horizontally */
+}
+
+#humanCellsTitle {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 30%;
+}
+
+.vertical-line {
+  width: 1px;                  /* Width of the vertical line */
+  height: 50px;                /* Height of the vertical line */
+  background-color: black;     /* Color of the vertical line */
+  margin-bottom: 33px;
 }
