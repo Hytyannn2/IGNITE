@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr class="animalPlantFunction">
                                                 <th>Cell</th>
                                                 <th>Function</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="cell"><strong>Mitochondria</strong></td>
+                                                <td><strong>Mitochondria</strong></td>
                                                 <td class="cell-function">
                                                     <ul>
                                                         <li><strong>Generates energy</strong> through the glucose oxidation during cellular respiration</li>
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr class="animalPlantFunction">
                                                 <th>Cell</th>
                                                 <th>Function</th>
                                             </tr>
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                     <table class="table">
                                             <tr>
-                                                <th id="respiration">Respiration</th>
+                                                <th class="unicellularProcess" id="respiration">Respiration</th>
                                             </tr>
                                             <tr>
                                                 <td class="cell-function">
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                         </table>
                                         <table class="excretion-table">
                                             <tr>
-                                                <th id="excretion">Excretion</th>
+                                                <th class="unicellularProcess" id="excretion">Excretion</th>
                                             </tr>
                                             <tr>
                                                 <td class="cell-function">
@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                         </table>
                                         <table>
                                             <thead>
-                                                <tr>
+                                                <tr class="unicellularProcess">
                                                     <th>Species</th>
                                                     <th>Favorable Conditions</th>
                                                     <th>Unfavorable Conditions</th>
@@ -340,15 +340,18 @@ document.addEventListener('DOMContentLoaded', function() {
                                         </table>
                                         ` },
                         { title: "Living Processes in Multicellular Organisms", content: `<p class="textbook-page"><span class="page-info">Textbook page 30-36</span></p>
+
+                        <!-- TYPE OF CELLS FOR PLANTS-->  
+
                         <div id="typeOfCells">
-                        <div id="humanCellsTitle">
+                        <div id="human-PlantCellsTitle">
                         <p>Human Cells</p>
                         </div> 
                         <div class="vertical-line"></div>   
                         </div>
                         <table id="tableOfCells">
                             <thead id="headOfCells">
-                                <tr>
+                                <tr class="cellType">
                                     <th>Muscle cell</th>
                                     <th>Epithelial cell</th>
                                     <th>Nerve cell</th>
@@ -376,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                         </ul>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="cellType">
                                     <th>White blood cell</th>
                                     <th>Red blood cell</th>
                                     <th>Sperm cell</th>
@@ -404,8 +407,230 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </tr>
                             
                         
+                            <!-- TYPE OF CELLS FOR PLANTS-->   
+
                         </table>    
-                            
+                        <div id="typeOfCells">
+                        <div id="human-PlantCellsTitle">
+                        <p> Plant Cells</p>
+                        </div> 
+                        <div class="vertical-line"></div>   
+                        </div>
+                        <table id="tableOfCells">
+                            <thead id="headOfCells">
+                                <tr class="cellType">
+                                    <th>Sieve tub element</th>
+                                    <th>Xylem vessel</th>
+                                    <th>Guard cell</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td class="cell-function">
+                                        <ul>
+                                            <li>Long cylindrical tubes arranged from end to end</li>
+                                            <li>Transport organic materials from leaves to storage organs</li>
+                                        </ul>
+                                    </td>
+                                    <td class="cell-function">
+                                        <ul>
+                                            <li>Long, continuous hollow tube</li>
+                                            <li>Transport water and mineral salts from roots to other parts</li>
+                                        </ul>
+                                    </td>
+                                    <td class="cell-function">
+                                        <ul>
+                                            <li>Modified lower epidermal cells with thicker cell wall on the inner side</li>
+                                            <li>Controls opening and closing of stoma</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="cellType">
+                                    <th>Palisade mesophyll cell</th>
+                                    <th>Spongy mesophyll cell</th>
+                                    <th>Root hair cell</th>
+                                </tr>
+                                <tr>
+                                    <td class="cell-function">
+                                        <ul>
+                                        <li>Long cylindrical cells arranged vertically</li>
+                                        <li>High chlorophyll density</li>
+                                        <li>Arrangement allows max absorption of sunlight</li>
+                                        </ul>
+                                    </td>
+                                    <td class="cell-function">
+                                        <ul>
+                                        <li>Loosely arranged/li>
+                                        <li>Large air space allows exchange of gas from inside of leaves to the PM cells</li>
+                                        </ul>
+                                    </td>
+                                    <td class="cell-function">
+                                        <ul>
+                                        <li>Has long projection</li>
+                                        <li>Adds surface area for water and mineral salt absorption</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>    
+                        <h4><strong><em><span class="comparison-title">DENSITY OF CERTAIN CELL COMPONENTS AND SPECIALISED CELL FUNCTIONS</span></em></strong></h4>
+
+                            <!--TABLE FOR CELL DENSITY-->
+
+                        <table>
+                                            <thead>
+                                                <tr class="lackOfOrganelles">
+                                                    <th>Cell component</th>
+                                                    <th>Type of cell</th>
+                                                    <th>Function</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <td rowspan="3">Mitochondrion</td>
+                                                <td><strong>Sperm</strong> cell</td>
+                                                <td>Provide energy to <strong>swim</strong>towards ovum</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Muscle</strong> cell</td>
+                                                    <td>Requires a lot of energy for muscles to  <strong>contract</strong> and cause movements</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Meristematic</strong> cell</td>
+                                                    <td>Requires energy for cells to <strong>divide</strong> and produce new cells</td>
+                                                </tr>
+
+
+
+                                                <tr>
+                                                    <td rowspan="3">Chloroplast</td>
+                                                    <td><strong>Palisade</strong> mesophyll cell</td>
+                                                    <td rowspan="3">To absorb energy from <strong>sunlight</strong> and carry out <strong>photosynthesis</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Spongy</strong> mesophyll cell</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Guard</strong> cell</td>
+                                                </tr>
+
+
+
+                                                <tr>
+                                                    <td rowspan="2">RER & Golgi apparatus</td>
+                                                    <td><strong>Pancreatic</strong> cell</td>
+                                                <td class="cell-function">
+                                                    <ul>
+                                                        <li><strong>Transport</strong> protein synthesised by ribosomes to the Golgi apparatus</li>
+                                                        <li>Modify protein into specific <strong>secretions<strong></li>
+                                                    </ul>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell-function"><strong>Goblet</strong> cell</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Secretes <strong>mucus</strong> to trap dust and microorganisms in respiratory tract</li>
+                                                            <li>Help in the <strong>digestion</strong> of food</li>
+                                                        </ul>
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>SER & Golgi Apparatus</td>
+                                                    <td><strong>Liver</strong> cell</td>
+                                                    <td>Synthesise <strong>lipids</strong> and <strong>detoxifies</strong> drugs & toxins</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                             <!-- TABLE FOR DEFICIENCY OF ORGANELLES -->
+
+                             <h4><strong><em><span class="comparison-title">EFFECT OF DEFICIENCY, ABSENCE OR FAILURE OF AN ORGANELLE IN CELLS</span></em></strong></h4>
+
+                             <table>
+                                <thead>
+                                    <tr class="lackOfOrganelles">
+                                        <th colspan="2">What happens when _______ is deficient / absent / fails to function properly?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lysosome</td>
+                                        <td class="cell-function">
+                                            <ul>
+                                                <li>Organic compounds cannot be broken down</li>
+                                                <li>Build up in a cell and become toxic</li>
+                                                <li>Damage cells and organs</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mitochondrion</td>
+                                        <td class="cell-function">
+                                            <ul>
+                                                <li>Respiration cannot occur</li>
+                                                <li>No energy for cell to carry out activities</li>
+                                                <li>Death of organism</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chloroplast</td>
+                                        <td class="cell-function">
+                                            <ul>
+                                                <li>Cell cannot carry out photosynthesis</li>
+                                                <li>Plant will die</li>
+                                                <li>Less food is synthesised and stunt plant growth</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ribosome</td>
+                                        <td class="cell-function">
+                                            <ul>
+                                                <li>Protein is not synthesised</li>
+                                                <li>Cell cannot repair damage, produce hormones and maintain cellular structure</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                                 <!-- TABLE FOR DISEASES WHEN LACK OF ORGANELLES -->
+
+                                 <table>
+                                    <thead>
+                                        <tr class="lackOfOrganelles">
+                                            <th colspan="2">Diseases related to the deficiency cell organelles</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Disease</th>
+                                            <th>Cause</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tay-Sachs disease</td>
+                                            <td class="cell-function">
+                                                <ul>
+                                                    <li>Caused by failure of lysosomes to produce an enzyme that break down certain fatty substances</li>
+                                                    <li>Fatty substances build up to toxic levels in the brain and affect nerve cell function</li>
+                                                    <li>Lead to loss of muscle control, blindness, paralysis and death</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mitochondrial dysfunction</td>
+                                            <td class="cell-function">
+                                                <ul>
+                                                    <li>Mitochondria cannot function properly</li>
+                                                    <li>Less cellular respiration and less energy</li>
+                                                    <li>Lead to excess fatigue, poor growth, muscle weakness</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                 </table>
+
                             
                             
                             
