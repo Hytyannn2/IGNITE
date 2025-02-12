@@ -245,53 +245,62 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </table>
                                 </div>
                              </div>` },
-                        { title: "Living Processes in Unicellular Organism", content: `<p class="textbook-page"><span class="page-info">Textbook page 28-29</span></p>
-                            <p><div class="amoeba-container">
-                                    <!-- Movement Section -->
-                                    <div class="amoeba-section">
-                                        <div class="amoeba-section-title">Movement</div>
-                                        <div class="amoeba-grid-container">
-                                            <div class="amoeba-grid-item">
-                                                <div class="amoeba-species-title">Amoeba sp.</div>
-                                                <ul>
-                                                    <li>Moves by extending out <span class="amoeba-highlight">pseudopodium</span> (false feet)</li>
-                                                    <li><span class="amoeba-highlight">Cytoplasm</span> then flows into the extended <span class="amoeba-highlight">pseudopodium</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="amoeba-grid-item">
-                                                <div class="amoeba-species-title">Paramecium sp.</div>
-                                                <ul>
-                                                    <li>Moves by rhythmic cilia beats</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Nutrition Section -->
-                                    
-                                     <p><div class="amoeba-container">
-                                    <div class="amoeba-section">
-                                        <div class="amoeba-section-title">Nutrition</div>
-                                        <div class="amoeba-grid-container">
-                                            <div class="amoeba-grid-item">
-                                                <div class="amoeba-species-title">Amoeba sp.</div>
-                                                <ul>
-                                                    <li>Extends pseudopodium to trap food particles by phagocytosis</li>
-                                                    <li>Undigested food is discharged during movement</li>
-                                                </ul>
-                                            </div>
-                                            <div class="amoeba-grid-item">
-                                                <div class="amoeba-species-title">Paramecium sp.</div>
-                                                <ul>
-                                                    <li>Cilium beat moves food into the oral groove</li>
-                                                    <li>Food vacuole merges with lysosome for digestion. Food particles hydrolysed by lysozyme in lysosome</li>
-                                                    <li>Nutrients are absorbed into the cytoplasm</li>
-                                                    <li>Undigested food is discharged through the anus</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                        { title: "Living Processes in Unicellular Organism", content: `<p class="textbook-page"><span class="page-info">Textbook page 28-29</span></p>                                     
+                                    <table>
+                                        <thead>
+                                            <tr class="unicellularProcess">
+                                                <th colspan="2">Movement</th>
+                                            </tr>
+                                            <tr class="unicellularProcess">
+                                                <th>Amoeba sp.</th>
+                                                <th>Paramecium sp.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="cell-function">
+                                                    <ul>
+                                                        <li>Extending out pseudopodium (false feet)</li>
+                                                        <li>Cytoplasm flow into pseudopodium</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="cell-function">
+                                                    <ul>
+                                                        <li>Rhythmic cilia beats</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <thead>
+                                            <tr class="unicellularProcess">
+                                                <th colspan="2">Nutrition</th>
+                                            </tr>
+                                            <tr class="unicellularProcess">
+                                                <th>Amoeba sp.</th>
+                                                <th>Paramecium sp.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="cell-function">
+                                                    <ul>
+                                                        <li>Trap food particles using pseudopodium</li>
+                                                        <li>Fuses food vacuole with lysosome for hydrolysis by lysozyme</li>
+                                                        <li>Absorbs nutrients into the cytoplasm</li>
+                                                        <li>Expels undigested food during movement</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="cell-function">
+                                                    <ul>
+                                                        <li>Rhythmic cilia beat helps transfer food particles into the oral groove</li>
+                                                        <li>Expels undigested food through anus</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                     <table class="table">
                                             <tr>
                                                 <th class="unicellularProcess" id="respiration">Respiration</th>
@@ -299,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                             <tr>
                                                 <td class="cell-function">
                                                     <ul>
-                                                        <li>Exchange of oxygen and carbon dioxide occur through plasma membrane by <strong>simple diffusion</strong> on the cell surface</li>
+                                                        <li>Occur through plasma membrane by <strong>simple diffusion</strong> on the cell surface</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -459,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </td>
                                     <td class="cell-function">
                                         <ul>
-                                        <li>Loosely arranged/li>
+                                        <li>Loosely arranged</li>
                                         <li>Large air space allows exchange of gas from inside of leaves to the PM cells</li>
                                         </ul>
                                     </td>
